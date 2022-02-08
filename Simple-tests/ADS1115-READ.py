@@ -15,9 +15,6 @@ i2c = I2C(scl=Pin(22), sda=Pin(21), freq=400000)
 # i2c = I2C()
 ads = ads1x15.ADS1115(i2c, addr, gain)
 
-def calculate_voltage(adc_read):
-    return adc_read * 5 / 65536
-
 #
 # Interrupt service routine for data acquisition
 # called by a timer interrupt
@@ -52,7 +49,6 @@ while index_put < _BUFFERSIZE:
 while True:
     signal = ads.read(0)
     Voltage = (signal * 0.125)/1000;
-    Voltage2 = calculate_voltage(signal)
     data_signal = "A0" + ":" + " adc=" + "{:.0f}".format(signal)  + " | " " V: " + "{:.2f}".format(Voltage)
     print (data_signal)
 
