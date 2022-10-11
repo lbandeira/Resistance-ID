@@ -1,14 +1,14 @@
 
-# ###################################################
-#            AUTECLA PROJETO SHOCK    V1.1.0       #
-#                                                  # 
-# Para excucao do codigo no picocom, utilize:      #
-#                                                  #
-#       exec(open("main.py").read())               #
-#                                                  #
-# ###################################################
+# ###############################################################################
+#            TESTE DE LEITURA DE RESISTENCIAS PELO ADC DA ESP32    V1.0.0       #
+#                                                                               # 
+#                   Para excucao do codigo no picocom, utilize:                 #
+#                                                                               #
+#                       exec(open("main.py").read())                            #
+#                                                                               #
+# ###############################################################################
 
-# 73b892f4
+
 import time
 from machine import Pin
 from machine import ADC
