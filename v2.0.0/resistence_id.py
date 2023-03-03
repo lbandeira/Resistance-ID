@@ -92,7 +92,8 @@ def get_resposta_crianca():
     
     # + " adc=" + "{:.0f}".format(signal)  + " | " + " V: " + "{:.2f}".format(Voltage) + " | "
     
-        
-        
+def read_loop_test():
+    while True:
+        res = get_resposta_crianca()
             
         

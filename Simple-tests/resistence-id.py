@@ -16,14 +16,14 @@ import time
 from machine import Pin
 from helper import ads
 
-NUM_PIN = 2                             # Quantidade de pinos de leitura de tags
+NUM_PIN = 12                             # Quantidade de pinos de leitura de tags
 
 #
 # Configuracao para seletor do MUX
 #
 
 NUM_SEL = 4
-pinS = [Pin(26,Pin.OUT), Pin(25,Pin.OUT), Pin(33,Pin.OUT), Pin(32,Pin.OUT)]
+pinS = [Pin(32,Pin.OUT), Pin(33,Pin.OUT), Pin(25,Pin.OUT), Pin(26,Pin.OUT)]
 
 
 #
